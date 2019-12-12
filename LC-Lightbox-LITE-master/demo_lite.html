@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="skins/dark.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+<title>Bowery Poetry</title>
+
+
+<!-- PAGE'S BASE CSS -->
+<style type="text/css">
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:black;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+
+
+body{font:14px/20px Arial,sans-serif;background-color:black;margin:0;padding:0;color:black}dl,ol,ul{padding:0;margin:0}h1,h2,h3,h4,h5,h6,p{margin-top:0;padding-right:15px;padding-left:15px}a img{border:none}a:link{color:#414958;text-decoration:underline}a:visited{color:#4E5869;text-decoration:underline}a:active,a:focus,a:hover{text-decoration:none}.container{width:80%;max-width:1260px;min-width:335px;background-color:black;margin:0 auto}.header{background-color:black;}.sidebar1{float:right;width:20%;background-color:black;padding-bottom:10px}.content{padding:10px 0;width:100%;float:right;background-color:black}.content ol,.content ul{padding:0 15px 15px 40px}ul.nav{list-style:none;border-top:1px solid #666;margin-bottom:15px}ul.nav li{border-bottom:1px solid #666}ul.nav a,ul.nav a:visited{padding:5px 5px 5px 15px;display:block;text-decoration:none;background-color:#8090AB;color:#000}ul.nav a:active,ul.nav a:focus,ul.nav a:hover{background-color:#6F7D94;color:#FFF}.fltrt{float:right;margin-left:8px}.fltlft{float:left;margin-right:8px}.clearfloat{clear:both;height:0;font-size:1px;line-height:0}.content,.sidebar1{min-height:500px}.content>div{margin:20px 15px}@media screen and (max-width:900px){.content>div{width:100%!important}}
+
+#logo {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYlJREFUeNrcV4FtgzAQBJQB3AlCN0gmiNkgnaBhg25QMUHSCUInKJkgZgNGyAhskP6r58qJsCEUE5qXLMvI8t//359NGDhMytWepk3gz7LQ4VzSdAw8WxTc2WYd9ymlymQop5Td87/IQEVDR137AhAahPNlFZWvtpVgRgtmulcA5CO5BmFyQHou8wJjmm3YB0B9TwAp1fKJ5mcap7EB7Mh5/qNKJTv/GAuAQsSHq+/zMaQ4R6RfzGRqpwJrZvWbbwDaGeuEwLc1hmm6HNshS8BMTxG5aDkjxv5sSAAFIo07nsPR7/p0RuSI6vWGcwQ4UQwFQPaQ6FVDp0z/RTRJAMxovj75rbDsqP0pnmyVjYikIawjR1z/TgA5HaYguRXEqO29qCXa1Y6iiVuRZaNr3dQxrrUTfGg+j8wfBtwBJ+hBm8pxBj7hfNsAWpdncZm60grA5EOG/n5H+mIAEx2y8wtAl/XWLhCIiCW5pPECciZ9ROcvPyacuj3Y/Pg6MDqAzLOP3EZAtm8BBgDqc3bEpb6xyQAAAABJRU5ErkJggg==') no-repeat center center transparent;
+	background-size: contain;
+	width: 25px;
+	height: 25px;
+	display: inline-block;	
+	position: relative;
+	bottom: -4px;
+	left: -4px;
+}
+
+.elem, .elem * {
+	box-sizing: border-box;
+	margin: 0 !important;	
+}
+.elem {
+	display: inline-block;
+	font-size: 0;
+	width: 33%;
+	border: 20px solid transparent;
+	border-bottom: none;
+	background: #fff;
+	padding: 10px;
+	height: auto;
+	background-clip: padding-box;
+}
+.elem > span {
+	display: block;
+	cursor: pointer;
+	height: 0;
+	padding-bottom:	70%;
+	background-size: cover;	
+	background-position: center center;
+}
+</style>
+
+
+
+
+
+
+<!-- LIGHTBOX FADING SHOW/HIDE EFFECT (as explained in documentation) -->
+<style type="text/css">
+.lcl_fade_oc.lcl_pre_show #lcl_overlay,
+.lcl_fade_oc.lcl_pre_show #lcl_window,
+.lcl_fade_oc.lcl_is_closing #lcl_overlay,
+.lcl_fade_oc.lcl_is_closing #lcl_window {
+	opacity: 0 !important;
+}
+.lcl_fade_oc.lcl_is_closing #lcl_overlay {
+	-webkit-transition-delay: .15s !important; 
+	transition-delay: .15s !important;
+}
+</style>
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////// -->
+<!-- REQUIRED ELEMENTS -->
+
+<script src="lib/jquery.js" type="text/javascript"></script>
+
+<script src="js/lc_lightbox.lite.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/lc_lightbox.css" />
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+        integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" 
+        crossorigin="anonymous">
+</script>
+<script src="js/lc_lightbox.lite.js"></script>
+<link rel="stylesheet" href="css/lc_lightbox.css">
+<!-- SKINS -->
+<link rel="stylesheet" href="skins/minimal.css" />
+
+
+<!-- ASSETS -->
+<script src="lib/AlloyFinger/alloy_finger.min.js" type="text/javascript"></script>
+
+<!-- //////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////// -->
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">
+          
+          <div style="text-align: center; color: whitesmoke; padding: 40px 20px 25px; opacity: 0.9;"> 
+              <h1>Bowery Poetry</h1>
+              <h3>a photo essay
+              </h3>
+          </div>
+    </div>
+    
+    
+	<div class="content">'
+		
+		<center><a class="elem" href="on_bowery.jpg" title="On Bowery" data-lcl-txt="On Bustling Bowery" data-lcl-thumb="on_bowery.jpg">
+        	<span style="background-image: url('on_bowery.jpg');"></span>
+        </a>
+    
+		<center> <a class="elem" href="entrance.jpg" title="Entrance" data-lcl-txt="An entrance too easy to miss" data-lcl-author="someone" data-lcl-thumb="entrance.jpg">
+        	<span style="background-image: url('entrance.jpg');"></span>
+        </a>
+		
+		 <a class="elem" href="hallway.jpg" title="Hallway" data-lcl-txt="A hallway painted with poetry and inspiration"  data-lcl-thumb="hallway.jpg">
+        	<span style="background-image: url('hallway.jpg');"></span>
+        </a>
+		
+   		<a class="elem" href="bar.PNG" title="Bar" data-lcl-txt="The bar of pre-event Hellos and during-event refreshments" data-lcl-thumb=bar.PNG>
+        	<span style="background-image: url('bar.PNG');"></span>
+			
+		<a class="elem" href="stage_and_seating.jpg" title="Stage and Seating" data-lcl-txt="A stage for performers; seats for the audience" data-lcl-thumb=stage_and_seating.jpg>
+        	<span style="background-image: url('stage_and_seating.jpg');"></span>
+		
+			<a class="elem" href="open_mic.jpg" title="Open Mic Audience" data-lcl-txt="A packed show at the Open Mic" data-lcl-thumb=open_mic.jpg>
+        	<span style="background-image: url('open_mic.jpg');"></span>
+				
+
+				
+			<a class="elem" href="the_famed_sign.jpg" title="The Famed Sign" data-lcl-txt="The famed sign of Bowery Poetry" data-lcl-thumb=the_famed_sign.jpg>
+        	<span style="background-image: url('the_famed_sign.jpg');"></span>
+				
+			
+			<a class="elem" href="chandelier.jpg" title="Chandelier" data-lcl-txt="The chandelier shines on--a classic, old time vibe" data-lcl-thumb=chandelier.jpg>
+        	<span style="background-image: url('chandelier.jpg');"></span>
+			
+			<a class="elem" href="screen.jpg" title="Screen" data-lcl-txt="The poet, the screen, and the stage" data-lcl-thumb=screen.jpg>
+        	<span style="background-image: url('screen.jpg');"></span>
+				
+			<a class="elem" href="performer.jpg" title="Performer" data-lcl-txt="Open Mic--Of poetry and performers" data-lcl-thumb=performer.jpg>
+        	<span style="background-image: url('performer.jpg');"></span>
+				
+			<a class="elem" href="dark.jpg" title="Dark" data-lcl-txt="An intimate event, darker lighting" data-lcl-thumb=dark.jpg>
+        	<span style="background-image: url('dark.jpg');"></span>
+				
+				
+			<a class="elem" href="final.jpg" title="Final" data-lcl-txt="A final look--Bowery Poetry wants people to come to it. Again and again." data-lcl-thumb=final.jpg>
+        	<span style="background-image: url('final.jpg');"></span>
+			
+			
+		
+   
+   		<br/><br/>
+   	</div>
+</div>
+
+
+
+<!-- //////////////////////////////////////////////// -->
+<!-- LIGHTBOX INITIALIZATION -->
+<script type="text/javascript">
+$(document).ready(function(e) {
+   
+	// live handler
+	lc_lightbox('.elem', {
+		wrap_class: 'lcl_fade_oc',
+		gallery : true,	
+		thumb_attr: 'data-lcl-thumb', 
+		
+		skin: 'minimal',
+		radius: 0,
+		padding	: 0,
+		border_w: 0,
+	});	
+
+});
+	
+	lc_lightbox('.elem', {
+  wrap_class: 'lcl_fade_oc',
+  gallery : true, 
+  thumb_attr: 'data-lcl-thumb', 
+  skin: 'dark',
+  // more options here
+}); 
+	
+	lc_lightbox('.elem', {
+
+  // whether to display a single element or compose a gallery
+  gallery     : true, 
+
+  // attribute grouping elements - use false to create a gallery with all fetched elements 
+  gallery_hook  : 'rel', 
+
+  // if a selector is found, set true to handle automatically DOM changes
+  live_elements : true, 
+
+  // whether to preload all images on document ready
+  preload_all   : false, 
+
+  // force elements type
+  global_type   : 'image', 
+  
+  // attribute containing element's source
+  src_attr    : 'href', 
+
+  // attribute containing the title - is possible to specify a selector with this syntax: "> .selector" or "> span" 
+  title_attr    : 'title', 
+
+  // attribute containing the description - is possible to specify a selector with this syntax: "> .selector" or "> span" 
+  txt_attr    : 'data-lcl-txt', 
+
+  // attribute containing the author - is possible to specify a selector with this syntax: "> .selector" or "> span" 
+  author_attr   : 'data-lcl-author', 
+  
+  // whether to enable slideshow
+  slideshow   : true, 
+
+  // animation duration for lightbox opening and closing / 1000 = 1sec
+  open_close_time : 500, 
+
+  // overlay's animation advance (on opening) and delay (on close) to window / 1000 = sec
+  ol_time_diff  : 100, 
+
+  // elements fading animation duration in millisecods / 1000 = 1sec
+  fading_time   : 150, 
+
+  // sizing animation duration in millisecods / 1000 = 1sec
+  animation_time  : 300, 
+
+  // slideshow interval duration in milliseconds / 1000 = 1sec
+  slideshow_time  : 6000, 
+
+  // autoplay slideshow - bool
+  autoplay    : false, 
+
+  // whether to display elements counter
+  counter     : false, 
+
+  // whether to display a progressbar when slideshow runs
+  progressbar   : true, 
+
+  // whether to create a non-stop pagination cycling elements
+  carousel    : true, 
+  
+  // Lightbox maximum width. 
+  // Use a responsive percent value or an integer for static pixel value
+  max_width   : '93%', 
+
+  // Lightbox maximum height. 
+  // Use a responsive percent value or an integer for static pixel value
+  max_height    : '93%', 
+
+  // overlay opacity / value between 0 and 1
+  ol_opacity    : 0.7, 
+
+  // background color of the overlay
+  ol_color    : '#111', 
+
+  // overlay patterns - insert the pattern name or false
+  ol_pattern    : false, 
+
+  // width of the lightbox border in pixels 
+  border_w    : 3, 
+
+  // color of the lightbox border
+  border_col    : '#ddd', 
+
+  // width of the lightbox padding in pixels
+  padding     : 10, 
+
+  // lightbox border radius in pixels 
+  radius      : 4, 
+
+  // whether to apply a shadow around lightbox window
+  shadow      : true, 
+
+  // whether to hide page's vertical scroller
+  remove_scrollbar: true, 
+  
+  // custom classes added to wrapper - for custom styling/tracking
+  wrap_class    : '', 
+
+  // light / dark / Minimal
+  skin      : 'light', 
+
+  // over / under / lside / rside
+  data_position : 'over', 
+
+  // inner / outer
+  cmd_position  : 'inner',  
+
+  // set closing button position for inner commands - normal/corner 
+  ins_close_pos : 'normal', 
+
+  // set arrows and play/pause position - normal/middle
+  nav_btn_pos   : 'normal', 
+  
+  // whether to hide texts on lightbox opening - bool or int (related to browser's smaller side)
+  txt_hidden    : 500, 
+
+  // bool / whether to display titles
+  show_title    : true, 
+
+  // bool / whether to display descriptions
+  show_descr    : true, 
+
+  // bool / whether to display authors
+  show_author   : true, 
+  
+  // enables thumbnails navigation (requires elements poster or images)
+  thumbs_nav    : true, 
+
+  // print type icons on thumbs if types are mixed
+  tn_icons    : true, 
+
+  // whether to hide thumbs nav on lightbox opening - bool or int (related to browser's smaller side)
+  tn_hidden   : 500, 
+
+  // width of the thumbs for the standard lightbox
+  thumbs_w    : 110, 
+
+  // height of the thumbs for the standard lightbox
+  thumbs_h    : 110, 
+
+  // attribute containing thumb URL to use or false to use thumbs maker
+  thumb_attr    : false, 
+
+  // script baseurl to create thumbnails (use src=%URL% w=%W% h=%H%)
+  thumbs_maker_url: false, 
+  
+  // Allow the user to expand a resized image. true/false
+  fullscreen    : true, 
+
+  // resize mode of the fullscreen image - smart/fit/fill
+  fs_img_behavior : 'fit', 
+
+  // when directly open in fullscreen mode - bool or int (related to browser's smaller side)
+  fs_only     : 500, 
+
+  // whether to trigger or nor browser fullscreen mode
+  browser_fs_mode : true, 
+  
+  // bool
+  socials     : true, 
+
+  // use a specific string representing URL parameters + placeholders (they will be replaced by the lightbox)
+  // it requires a server-side script handling those parameters and filling the page with <a href="https://www.jqueryscript.net/tags.php?/Facebook/">Facebook</a> Metadata.
+  // a usage example could be: app_id=YOUR-APP-ID&redirect_uri=THE-REDIRECT-URI&lcsism_img=%IMG%&lcsism_title=%TITLE%&lcsism_descr=%DESCR%
+  // the lightbox will replace %IMG% %TITLE% and %DESCR%
+  fb_share_params : false,
+
+  // bool / allow text hiding
+  txt_toggle_cmd  : true, 
+
+  // bool / whether to add download button
+  download    : true, 
+
+  // bool / Allow touch interactions for mobile (requires AlloyFinger)
+  touchswipe    : true, 
+
+  // bool / Allow elements navigation with mousewheel
+  mousewheel    : true, 
+
+  // enable modal mode (no closing on overlay click)
+  modal     : false, 
+
+  // whether to avoid right click on lightbox
+  rclick_prevent  : false
+  
+});  
+	
+	lc_lightbox('.elem', {
+
+  elems_parsed  : function() {},
+  html_is_ready   : function() {},
+  on_open     : function() {},
+  on_elem_switch  : function() {},
+  slideshow_start : function() {},
+  slideshow_end : function() {},
+  on_fs_enter   : function() {},
+  on_fs_exit    : function() {},
+  on_close    : function() {},
+  
+}); 
+</script>
+<script src="alloy_finger.min.js"></script>
+	
+<!-- //////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////// -->
+
+</body>
+</html>
